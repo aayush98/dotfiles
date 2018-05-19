@@ -125,10 +125,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-	alias 408project="cd ~/Documents/ece408/project"
 	alias home="cd ~/"
-	alias mp3_nodebug="(cd ~ ; exec ./mp3_nodebug)"
-	alias mp3_debug="(cd ~ ; exec ./mp3_debug)"
-	alias devel="(cd ~ ; exec ./devel)"
 	alias packageUpdate="sudo pacman -Syu; yaourt -Syua"
-	alias 391work="cd ~/ece391/ece391_share/work/mp3"

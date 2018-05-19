@@ -103,13 +103,13 @@ rofi.hide-scrollbar:                 true
 ! "New style theme file" Set from: Default
 ! rofi.theme:
 ! "Color scheme for normal row" Set from: XResources
-!rofi.color-normal:                   #e81d1d1d,  #00aa82,  #e81d1d1d,  #00aa82,  #e81d1d1d
+rofi.color-normal: #001d1d1d,  #22bb66,  #001d1d1d,  #22bb66,  #1d1d1d
 ! "Color scheme for urgent row" Set from: XResources
-!rofi.color-urgent:                   #e81d1d1d,  #dc322f,  #eee8d5,  #dc322f,  #fdf6e3
+rofi.color-urgent: #001d1d1d,  #dc322f,  #eee8d5,  #dc322f,  #fdf6e3
 ! "Color scheme for active row" Set from: XResources
-!rofi.color-active:                   #e81d1d1d,  #34B454,  #e81d1d1d,  #34B454,  #e81d1d1d
+rofi.color-active: #001d1d1d,  #008868,  #001d1d1d,  #008868,  #1d1d1d
 ! "Color scheme window" Set from: XResources
-!rofi.color-window:                   #1d1d1d,      #e81d1d1d,  #00aa82
+rofi.color-window: #f01d1d1d,      #f01d1d1d, #22bb66
 ! "Max history size (WARNING: can cause slowdowns when set to high)." Set from: Default
 ! rofi.max-history-size:               25
 ! "Hide the prefix mode prefix on the combi view." Set from: Default
