@@ -1,0 +1,90 @@
+[global]
+    font = FantasqueSansMono Nerd Font Mono 13;
+    format = "<span fgcolor="#1d1d1d" bgcolor="#00aa82">%a</span><span fgcolor="#00aa82" bgcolor="#1d1d1d"></span>\n%s\n%b"
+    sort = yes
+    indicate_hidden = yes
+    alignment = left
+    bounce_freq = 0
+    show_age_threshold = 60
+    max_icon_size = 90
+    word_wrap = no
+    ellipsize = middle
+    ignore_newline = no
+    geometry = "350x10-785+22"
+    ##transparency = 25
+    transparency = 0
+    idle_threshold = 120
+    monitor = 0
+    follow = mouse
+    sticky_history = yes
+    line_height = 5
+    separator_height = 3
+    padding = 10
+    horizontal_padding = 10
+    separator_color = frame
+    startup_notification = true
+    show_indicators = no
+    dmenu = /usr/bin/dmenu -p dunst
+    browser = /usr/bin/firefox -new-tab
+    icon_position = left
+    icon_path = /usr/share/icons/Notifications
+    color = "#1D1D1D"
+    # width = 0
+
+[frame]
+    width = 3
+    color = "#22BB66"
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    context = ctrl+shift+period
+    history = ctrl+shift
+
+[urgency_low]
+    background = "#1D1D1D"
+    foreground = "#FFFFFF"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1D1D1D"
+    foreground = "#FFFFFF"
+    timeout = 5
+
+[urgency_critical]
+    background = "#1D1D1D"
+    foreground = "#FFFFFF"
+    timeout = 5
+
+# [Franz]
+#     appname = Franz
+#     format  = "%a"
+#
+# [Discord]
+#     appname = Discord Canary
+#     format = "<b>%s</b>\n%b"
+#     new_icon = Discord
+#
+[Mailspring]
+    appname = Mailspring
+    # format = "<b>%s</b>\n%b"
+    new_icon = WMail
+    timeout = 2000
+#
+# [NCMPCPP]
+#     appname = mpc
+#     format = "<b>Now Playing:</b>\n%s\n%b"
+#     #format = "<b>%s</b>\n%b"
+#     new_icon = NCMPCPP
+#     timeout = 10
+#
+[Spotify]
+    appname = Spotify
+    format = "<span fgcolor="#1d1d1d" bgcolor="#27ae60">%a</span><span fgcolor="#27ae60" bgcolor="#1d1d1d"></span>\n<b>Now Playing:</b>\n %s\n %b"
+    timeout = 10
+#
+# [Transmission]
+#     appname = Transmission
+#     format = "<b>%s</b>\n%b"
+#     new_icon = Transmission
+#     timeout = 2000
