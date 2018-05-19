@@ -1,9 +1,9 @@
-stow firefox -t stow firefox -t ~/.mozilla/firefox/*.default/chrome/
-stow rofi -t ~/.config/rofi
-stow polybar -t ~/.config/polybar
+stow atom -t ~/.atom
+stow cava -t ~/.config/cava
+stow conky -t ~/.conky
 stow dunst -t ~/.config/dunst
-stow i3 -t ~/.config/i3
-stow atom -t ~/.atom 
+stow firefox -t stow firefox -t ~/.mozilla/firefox/*.default/chrome/
 stow home
-
-
+stow i3 -t ~/.config/i3
+stow polybar -t ~/.config/polybar
+stow rofi -t ~/.config/rofi
