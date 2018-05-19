@@ -1,0 +1,71 @@
+.tab-background[selected="true"]:-moz-lwtheme {
+	background: #22BB66 !important; /* this sets the color of the tab background */
+	/* align-content: center !important; */
+}
+.tab-background[selected="false"]:-moz-lwtheme {
+	background: rgb(29, 29, 29) !important; /* this sets the color of the tab background */
+
+}
+tab[selected="true"]{
+	color: #1d1d1d !important;
+	border: 0px !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+	max-width: 100% !important;
+	align-content: center !important;
+}
+#tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+	min-height: 0 !important;
+}
+
+#TabsToolbar {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#tabbrowser-tabs tab[first-tab="true"][last-tab="true"] {
+	visibility: collapse !important;
+}
+
+/* I don't use tabs so I just hide the new tab button. You should be able to use a similar trick as the rule above with
+css siblings selectors if you want to keep it when the tab bar is visible. */
+#tabbrowser-tabs .tabs-newtab-button {
+	visibility: collapse !important;
+}
+
+#tabbrowser-tabs tab {
+	min-height: 0px !important;
+	/* visibility: collapse; */
+}
+
+
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+   border-left: none !important; /* Remove borders from inactive tabs */
+}
+
+:root {
+  --tabs-border: transparent !important; /* Remove borders from active tab and below tabs */
+}
+
+.tab-line[selected="true"] {
+background-color : #22BB66 !important; /* this sets the color of the line above the tab */
+height: 0px !important;
+}
+
+#navigator-toolbox {
+    --tabs-border-color: #22bb66 !important;
+}
+
+#navigator-toolbox::after {
+    display: none !important;
+}
+:root:-moz-lwtheme-brighttext {
+  --chrome-background-color: rgb(29, 29, 29) !important;
+  --chrome-secondary-background-color: rgb(29, 29, 29) !important;
+}
+
+/* :root { --tabs-border: transparent !important; }
+.tabbrowser-tab::before { color: grey !important; opacity: 0 !important; }
+.tabbrowser-tab::after { opacity: 0 !important; }
+.titlebar-placeholder { border: none !important; } */
