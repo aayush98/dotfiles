@@ -16,9 +16,9 @@ set $mod Mod4
 font pango:Fantasque Sans Mono 17px
 
 hide_edge_borders smart
-# new_window pixel
 
 for_window [class=".*"] title_format "      %class"
+for_window [class="i3-frame"] title_format "      %class"
 for_window [class="Firefox"] title_format "     "
 for_window [class="Spotify"] title_format "     "
 for_window [class="terminal"] title_format "     "
@@ -78,8 +78,7 @@ bindsym $mod+o exec nautilus
 bindsym $mod+Shift+q kill
 
 
-bindsym $mod+b exec i3-msg border none
-bindsym $mod+Shift+b exec i3-msg border 3
+default_border normal 0
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -215,14 +214,12 @@ mode "Disable gaps"{
 
 bindsym $mod+r mode "resize"
 
-set $myGreen                #22BB66
-set $myTeals                #00AA82
 
 set $bg-color 	            #22BB66
 set $inactive-bg-color      #1D1D1D
 set $text-color             #1D1D1D
 set $inactive-text-color    #A3A8AE
-set $urgent-bg-color        #E53935
+set_from_resource $urgent-bg-color        i3wm.color1 #aa2244
 
 # window colors
 #                       border              background         text                 indicator

@@ -14,7 +14,7 @@
     foreground-alt = ${xrdb:color6:#222}
     primary = #ffb52a
     secondary = #e60053
-    alert = #aa3a5a
+    alert = #aa2244
 
     ;foreground = #dfdfdf
     ;background = #1d1d1d
@@ -151,14 +151,14 @@
     ; focused = Active workspace on focused monitor
     format-focused = "<label-focused>"
     label-focused-prefix = 
-    label-focused ="  %name% "
+    label-focused ="  %name%  "
     label-focused-foreground = #1d1d1d
     label-focused-background = ${colors.background-alt}
     label-focused-underline = ${colors.primary}
     label-focused-padding = 0
 
     ; unfocused = Inactive workspace on any monitor
-    label-unfocused = "     %name%    "
+    label-unfocused = "   %name%   "
     label-unfocused-foreground = ${colors.foreground-alt}
     ;#a3a8ae
     label-unfocused-padding = ${module/bspwm.label-occupied-padding}
@@ -168,10 +168,12 @@
     label-visible-background = ${self.label-focused-background}
     label-visible-underline = ${self.label-focused-underline}
     label-visible-padding = ${self.label-focused-padding}
+
     ; urgent = Workspace with urgency hint set
-    label-urgent = "%{F#1d1d1d}    %name%   %{F#aa3a5a B#1d1d1d}"
-    label-urgent-background = ${module/bspwm.label-urgent-background}
-    label-urgent-padding = ${module/bspwm.label-urgent-padding}
+    label-urgent = "  %name%  "
+    label-urgent-foreground = #1d1d1d
+    label-urgent-background = ${colors.alert}
+    label-urgent-padding = 0
 
     ws-icon-0 = ;
     ws-icon-1 = 2;

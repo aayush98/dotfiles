@@ -11,9 +11,14 @@ tab[selected="true"]{
 	border: 0px !important;
 }
 
+.tab-content{
+	height: 30px !important;
+	text-align: center !important;
+}
+
 .tabbrowser-tab[fadein]:not([pinned]) {
 	max-width: 100% !important;
-	align-content: center !important;
+	text-align: center !important;
 }
 #tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
 	min-height: 0 !important;
