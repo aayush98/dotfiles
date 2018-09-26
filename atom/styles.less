@@ -26,7 +26,7 @@
     font-size: 20px;
 }
 .status-bar{
-    background-color: #232323;
+    background-color: #1d1d1d;
 }
 .tree-view {
   color: rgb(0,170, 130);
@@ -36,7 +36,20 @@
     background-color: #1d1d1d;
 }
 
+.dash-icons-enabled .tree-view .file .name::before{
+    font-family: devicons;
+    content: "\e696";
+}
 
+.go-icon:before{
+    font-family: file-icons;
+    content: "\E624";
+}
+
+.icon[data-name$=".go"]:before{
+    font-family: file-icons;
+    content: "\E624";
+}
 
 atom-text-editor .gutter {
     margin-left: 0px;

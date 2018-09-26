@@ -18,6 +18,7 @@ font pango:Fantasque Sans Mono 17px
 hide_edge_borders smart
 
 for_window [class=".*"] title_format "      %class"
+for_window [class="Chromium"] title_format "     "
 for_window [class="i3-frame"] title_format "      %class"
 for_window [class="Firefox"] title_format "     "
 for_window [class="Spotify"] title_format "     "
@@ -260,8 +261,8 @@ bindsym $mod+Shift+c exec sh ~/.config/i3/conky_switch.sh
 #default executios
 #exec_always betterlockscreen -w
 exec feh --randomize --bg-fill /usr/share/backgrounds/i3/*
-exec mailspring
-exec Caprine
+# exec mailspring
+exec caprine
 exec_always systemctl start expressvpn.service
 exec_always compton --config ~/.config/compton/compton.conf
 exec_always xrdb -load ~/.Xresources

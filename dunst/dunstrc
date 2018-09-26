@@ -1,5 +1,5 @@
 [global]
-    font = FantasqueSansMono Nerd Font Mono 13;
+    font = Fantasque Sans Mono 13;
     format = "<span fgcolor="#1d1d1d" bgcolor="#00aa82">%a</span><span fgcolor="#00aa82" bgcolor="#1d1d1d"></span>\n%s\n%b"
     sort = yes
     indicate_hidden = yes
@@ -22,17 +22,17 @@
     padding = 10
     horizontal_padding = 10
     separator_color = frame
-    startup_notification = true
+    startup_notification = false
     show_indicators = no
     dmenu = /usr/bin/dmenu -p dunst
     browser = /usr/bin/firefox -new-tab
     icon_position = left
-    icon_path = /usr/share/icons/Notifications
+    icon_path = /home/aayushgu/.icons/dunst/
     color = "#1D1D1D"
     # width = 0
 
 [frame]
-    width = 3
+    width = 2
     color = "#22BB66"
 
 [shortcuts]
@@ -56,35 +56,19 @@
     foreground = "#FFFFFF"
     timeout = 5
 
-# [Franz]
-#     appname = Franz
-#     format  = "%a"
-#
-# [Discord]
-#     appname = Discord Canary
-#     format = "<b>%s</b>\n%b"
-#     new_icon = Discord
-#
+[Caprine]
+     appname = Caprine
+     format  = "<span fgcolor="#1d1d1d" bgcolor="#0084ff">~%a</span><span fgcolor="#0084ff" bgcolor="#1d1d1d"></span>\n%s\n%b"
+     new_icon = messenger
+     timeout = 30
+
 [Mailspring]
     appname = Mailspring
-    # format = "<b>%s</b>\n%b"
-    new_icon = WMail
-    timeout = 2000
-#
-# [NCMPCPP]
-#     appname = mpc
-#     format = "<b>Now Playing:</b>\n%s\n%b"
-#     #format = "<b>%s</b>\n%b"
-#     new_icon = NCMPCPP
-#     timeout = 10
-#
+    format = "<span fgcolor="#1d1d1d" bgcolor="#aa2244">~%a</span><span fgcolor="#aa2244" bgcolor="#1d1d1d"></span>\n%s\n%b"
+    timeout = 60
+
 [Spotify]
     appname = Spotify
-    format = "<span fgcolor="#1d1d1d" bgcolor="#27ae60">%a</span><span fgcolor="#27ae60" bgcolor="#1d1d1d"></span>\n<b>Now Playing:</b>\n %s\n %b"
+    frame_color = "#0084FF"
+    format = "<span fgcolor="#1d1d1d" bgcolor="#27ae60">~%a</span><span fgcolor="#27ae60" bgcolor="#1d1d1d"></span>\n<b>Now Playing:</b>\n %s\n %b"
     timeout = 10
-#
-# [Transmission]
-#     appname = Transmission
-#     format = "<b>%s</b>\n%b"
-#     new_icon = Transmission
-#     timeout = 2000
