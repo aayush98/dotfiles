@@ -35,6 +35,18 @@
 *.color7:       #6d7680
 *.color15:      #c5c8c6
 
+#define PL_FONT             HeavyData Nerd Font
+#define FSM_FONT            FantasqueSansMono Nerd Font
+
+
+! Fonts and Encoding
+XTerm*utf8: True
+XTerm*locale: True
+XTerm*utf8Title: True
+XTerm*preeditType: Root
+XTerm*xftAntialias: true
+XTerm*.faceName: FSM_FONT:size=13
+XTerm*renderFont: True
 
 !                  'background', 'border', 'separator'
  rofi.color-window: #f01d1d1d,      #f01d1d1d, #22bb66

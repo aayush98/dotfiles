@@ -1,14 +1,16 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PAT
-	export PATH="$PATH:/home/aayushg9/bin/"
+	export PATH="$PATH:/home/aayushgu/bin/:/home/aayushgu/.local/bin"
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/aayushg9/.oh-my-zsh
-
+  export ZSH=/home/aayushgu/.oh-my-zsh
+	export TERM="xterm-256color"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # POWERLEVEL9K_MODE='nerdfont-complete'
 neofetch
+~/.Color_Scripts/.panes
+xrdb -load ~/.Xresources
 POWERLEVEL9K_HOME_ICON=''
 POWERLEVEL9K_HOME_SUB_ICON=''
 POWERLEVEL9K_DEFAULT_ICON=''
@@ -29,12 +31,12 @@ POWERLEVEL9K_NODE_VERSION_VISUAL_IDENTIFIER_COLOR="036"
 POWERLEVEL9K_TIME_BACKGROUND="black"
 POWERLEVEL9K_TIME_FOREGROUND="248"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M} %F{036}  "
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=("os_icon" 'context' 'dir')
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=('context' 'dir')
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('vcs' 'time' 'battery')
 POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uE0B2'
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 POWERLEVEL9K_OS_ICON_BACKGROUND='010'
-POWERLEVEL9K_LINUX_ICON='%F{234} '
+POWERLEVEL9K_LINUX_ICON=''
 POWERLEVEL9K_BATTERY_HIGH_THRESHOLD=98
 POWERLEVEL9K_BATTERY_ICON=""
 POWERLEVEL9K_BATTERY_VERBOSE=false
@@ -106,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -126,4 +128,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 	alias home="cd ~/"
-	alias packageUpdate="sudo pacman -Syu; yaourt -Syua"
+	alias pUp="sudo pacman -Syu; yay -Syu"
+	# alias pUp="sudo apt-get update; sudo apt-get upgrade"

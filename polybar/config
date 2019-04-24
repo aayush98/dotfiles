@@ -11,7 +11,8 @@
     background = ${xrdb:bakcground:#1d1d1d}
     background-alt = ${xrdb:color10:#222}
     foreground = ${xrdb:foreground:#222}
-    foreground-alt = ${xrdb:color6:#222}
+    foreground-alt = ${xrdb:color12:#222}
+    fg-purple = ${xrdb:color12:#222}
     primary = #ffb52a
     secondary = #e60053
     alert = #aa2244
@@ -236,7 +237,7 @@
 
     format-connected = "<label-connected>"
     label-connected-foreground = #1d1d1d
-    label-connected-background = ${colors.background-alt}
+    label-connected-background = ${colors.foreground-alt}
     format-connected-underline = #9f78e1
     label-connected = "  %{T5}%essid%%{T-} "
 
@@ -245,22 +246,22 @@
     ;format-disconnected-underline = ${self.format-connected-underline}
     label-disconnected = "  N/A "
     label-disconnected-foreground = #1d1d1d
-    label-disconnected-background = ${colors.background-alt}
+    label-disconnected-background = ${colors.foreground-alt}
 
 
     format-connected-prefix = 
-    format-connected-prefix-foreground = ${colors.background-alt}
+    format-connected-prefix-foreground = ${colors.foreground-alt}
     format-connected-prefix-background = #1d1d1d
     format-connected-suffix = 
     format-connected-suffix-foreground = #1d1d1d
-    format-connected-suffix-background = ${colors.background-alt}
+    format-connected-suffix-background = ${colors.foreground-alt}
 
     format-disconnected-prefix = 
-    format-disconnected-prefix-foreground = ${colors.background-alt}
+    format-disconnected-prefix-foreground = ${colors.foreground-alt}
     format-disconnected-prefix-background = #1d1d1d
     format-disconnected-suffix = 
     format-disconnected-suffix-foreground = #1d1d1d
-    format-disconnected-suffix-background = ${colors.background-alt}
+    format-disconnected-suffix-background = ${colors.foreground-alt}
 
 [module/eth]
     type = internal/network
@@ -289,11 +290,11 @@
 
     time = %H:%M
     time-alt = %H:%M
-    label-background = ${colors.background-alt}
+    label-background = ${colors.fg-purple}
     label-foreground = #1d1d1d
 
     format-suffix = ""
-    format-suffix-foreground = ${colors.background-alt}
+    format-suffix-foreground = ${colors.fg-purple}
     format-suffix-background = #1d1d1d
 
     label = "%{T5}%date% %time%%{T-} "

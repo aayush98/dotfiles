@@ -102,9 +102,9 @@ foreground = '#00aa82'
 # Gradient mode, only hex defined colors are supported, background must also be defined in hex
 # or remain commented out. 1 = on, 0 = off. Warning: for certain terminal emulators cava will
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
-gradient = 0
-gradient_color_1 = '#27AE62'
-gradient_color_2 = '#00aa82'
+gradient = 1
+gradient_color_1 = '#22BB66'
+gradient_color_2 = '#1E4780'
 
 
 

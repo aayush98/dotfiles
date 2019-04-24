@@ -1,74 +1,97 @@
 [global]
-    font = Fantasque Sans Mono 13;
-    format = "<span fgcolor="#1d1d1d" bgcolor="#00aa82">%a</span><span fgcolor="#00aa82" bgcolor="#1d1d1d"></span>\n%s\n%b"
-    sort = yes
+    #font = Fantasque Sans Mono 14;
+    font = FantasqueSansMono Nerd Font 14;
+    format = "<span fgcolor="#1D1D1D" bgcolor="#00AA82">%a</span><span fgcolor="#00AA82" bgcolor="#1D1D1D"></span>\n%s\n%b"
+    shrink = yes
     indicate_hidden = yes
     alignment = left
-    bounce_freq = 0
-    show_age_threshold = 60
+    show_age_threshold = -1
     max_icon_size = 90
     word_wrap = no
-    ellipsize = middle
+    ellipsize = end
     ignore_newline = no
-    geometry = "350x10-785+22"
-    ##transparency = 25
+    geometry = "-640x100-0+22"
     transparency = 0
-    idle_threshold = 120
+    idle_threshold = 10
     monitor = 0
     follow = mouse
     sticky_history = yes
-    line_height = 5
-    separator_height = 3
+    history_length = 10
+    line_height = 2
+    separator_height = 0
     padding = 10
     horizontal_padding = 10
-    separator_color = frame
+    # Merge multiple notifications with the same content
+    stack_duplicates = false
     startup_notification = false
     show_indicators = no
     dmenu = /usr/bin/dmenu -p dunst
     browser = /usr/bin/firefox -new-tab
-    icon_position = left
+    icon_position = right
     icon_path = /home/aayushgu/.icons/dunst/
     color = "#1D1D1D"
-    # width = 0
-
-[frame]
-    width = 2
-    color = "#22BB66"
+    notification_height = 0
+    fullscreen = show
+    corner_radius = 15
+    frame_width = 4
+    frame_color = "#00AA82"
+    verbosity = mesg
 
 [shortcuts]
     close = ctrl+space
     close_all = ctrl+shift+space
     context = ctrl+shift+period
-    history = ctrl+shift
+#    history = ctrl+shift
 
 [urgency_low]
     background = "#1D1D1D"
-    foreground = "#FFFFFF"
-    timeout = 5
+    foreground = "#c5c8c6"
+    timeout = 30
 
 [urgency_normal]
     background = "#1D1D1D"
-    foreground = "#FFFFFF"
-    timeout = 5
+    foreground = "#c5c8c6"
+    timeout = 30
 
 [urgency_critical]
     background = "#1D1D1D"
-    foreground = "#FFFFFF"
-    timeout = 5
+    foreground = "#c5c8c6"
+    timeout = 30
+
+[Evolution Reminders]
+    icon = *MineTime*
+    frame_color = "#2FB7BB"
+    format  = "<span fgcolor="#1D1D1D" bgcolor="#2FB7BB">//Calendar</span><span fgcolor="#2FB7BB" bgcolor="#1D1D1D"></span>\n%s\n%b"
+    word_wrap = yes
+    timeout = 60
 
 [Caprine]
      appname = Caprine
-     format  = "<span fgcolor="#1d1d1d" bgcolor="#0084ff">~%a</span><span fgcolor="#0084ff" bgcolor="#1d1d1d"></span>\n%s\n%b"
+     frame_color = "#0084ff"
+     format  = "<span fgcolor="#1D1D1D" bgcolor="#0084ff">//%a</span><span fgcolor="#0084ff" bgcolor="#1D1D1D"></span>\n%s\n%b"
      new_icon = messenger
-     timeout = 30
+     timeout = 60
 
 [Mailspring]
     appname = Mailspring
-    format = "<span fgcolor="#1d1d1d" bgcolor="#aa2244">~%a</span><span fgcolor="#aa2244" bgcolor="#1d1d1d"></span>\n%s\n%b"
+    frame_color = "#4f8fcf"
+    format = "<span fgcolor="#1D1D1D" bgcolor="#4f8fcf">//%a</span><span fgcolor="#4f8fcf" bgcolor="#1D1D1D"></span>\n%s\n%b"
     timeout = 60
 
 [Spotify]
     appname = Spotify
-    frame_color = "#0084FF"
-    format = "<span fgcolor="#1d1d1d" bgcolor="#27ae60">~%a</span><span fgcolor="#27ae60" bgcolor="#1d1d1d"></span>\n<b>Now Playing:</b>\n %s\n %b"
-    timeout = 10
+    frame_color = "#27ae60"
+    format = "<span fgcolor="#1D1D1D" bgcolor="#27ae60">//%a</span><span fgcolor="#27ae60" bgcolor="#1D1D1D"></span>\n<b>Now Playing:</b>\n//%s\n//%b"
+    timeout = 45
+
+[expressvpn]
+    summary = VPN *
+    frame_color = "#C6252D"
+    format = "<span fgcolor="#1D1D1D" bgcolor="#C6252D">//ExpressVPN</span><span fgcolor="#C6252D" bgcolor="#1D1D1D"></span>\n//%s\n//%b\n"
+    timeout = 45
+
+# [expressvpn_1]
+#    summary = VPN disconnected
+#    frame_color = "#C6252D"
+#    format = "<span fgcolor="#1D1D1D" bgcolor="#C6252D">//ExpressVPN</span><span fgcolor="#C6252D" bgcolor="#1D1D1D"></span>\n//%s\n\n\n"
+#    timeout = 45
