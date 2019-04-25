@@ -230,11 +230,11 @@ mode "Disable gaps"{
 bindsym $mod+r mode "resize"
 
 
-set $bg-color 	            #22BB66
-set $inactive-bg-color      #1D1D1D
-set $text-color             #1D1D1D
-set $inactive-text-color    #A3A8AE
-set_from_resource $urgent-bg-color        i3wm.color1 #aa2244
+set_from_resource $bg-color 	            i3wm.color10
+set_from_resource $inactive-bg-color        i3wm.background
+set_from_resource $text-color               i3wm.color0
+set_from_resource $inactive-text-color      i3wm.foreground
+set_from_resource $urgent-bg-color          i3wm.color1 #aa2244
 
 # window colors
 #                       border              background         text                 indicator
